@@ -13,48 +13,52 @@ About Data
 This project's data was obtained from the Kaggle Walmart Sales Forecasting Competition and it encompasses sales transactions from three Walmart branches situated in Mandalay, Yangon, and Naypyitaw, respectively. The data contains 17 columns and 1000 rows:
 
 Column	Description	Data Type
-invoice_id	Invoice of the sales made	VARCHAR(30)
 
-branch	Branch at which sales were made	VARCHAR(5)
+invoice_id	            Invoice of the sales made	VARCHAR(30)
 
-city	The location of the branch	VARCHAR(30)
+branch	                Branch at which sales were made	VARCHAR(5)
 
-customer_type	The type of the customer	VARCHAR(30)
+city	                The location of the branch	VARCHAR(30)
 
-gender	Gender of the customer making purchase	VARCHAR(10)
+customer_type          	The type of the customer	VARCHAR(30)
 
-product_line	Product line of the product sold	VARCHAR(100)
+gender	              Gender of the customer making purchase	VARCHAR(10)
 
-unit_price	The price of each product	DECIMAL(10, 2)
+product_line	       Product line of the product sold	VARCHAR(100)
 
-quantity	The amount of the product sold	INT
+unit_price	          The price of each product	DECIMAL(10, 2)
 
-VAT	The amount of tax on the purchase	FLOAT(6, 4)
+quantity	           The amount of the product sold	INT
 
-total	The total cost of the purchase	DECIMAL(12, 4)
+VAT	                 The amount of tax on the purchase	FLOAT(6, 4)
 
-date	The date on which the purchase was made	DATETIME
+total	           The total cost of the purchase	DECIMAL(12, 4)
 
-time	The time at which the purchase was made	TIME
+date	          The date on which the purchase was made	DATETIME
 
-payment	The total amount paid	DECIMAL(10, 2)
+time	             The time at which the purchase was made	TIME
 
-cogs	Cost Of Goods sold	DECIMAL(10, 2)
+payment	          The total amount paid	DECIMAL(10, 2)
 
-gross_margin_pct	Gross margin percentage	FLOAT(11, 9)
+cogs	            Cost Of Goods sold	DECIMAL(10, 2)
 
-gross_income	Gross Income	DECIMAL(12, 4)
+gross_margin_pct	    Gross margin percentage	FLOAT(11, 9)
 
-rating	Rating	FLOAT(2, 1)
+gross_income	          Gross Income	DECIMAL(12, 4)
+
+rating	            Rating	FLOAT(2, 1)
 
 Analysis List:
+
 Product Analysis
 
 Perform an analysis on the data to gain insights into different product lines, determine the top-performing product lines, and identify areas for improvement in other product lines.
 
+
 Sales Analysis
 
 The objective of this analysis is to address the inquiry regarding the sales trends of the product. The outcomes of this analysis can assist in evaluating the efficiency of each applied sales strategy in the business and determining necessary modifications to increase sales.
+
 
 Customer Analysis
 
@@ -76,7 +80,8 @@ This will help use generate some new columns from existing ones.
 
 Add a new column named time_of_day to give insight of sales in the Morning, Afternoon and Evening. This will help answer the question on which part of the day most sales are made.
 
-Add a new column named day_name that contains the extracted days of the week on which the given transaction took place (Mon, Tue, Wed, Thur, Fri). This will help answer the question on which week of the day each branch is busiest.
+Add a new column named day_name that contains the extracted days of the week on which the given transaction took place (Mon, Tue, Wed, Thur, Fri).
+ This will help answer the question on which week of the day each branch is busiest.
 
 Add a new column named month_name that contains the extracted months of the year on which the given transaction took place (Jan, Feb, Mar). Help determine which month of the year has the most sales and profit.
 
@@ -87,11 +92,14 @@ Conducting exploratory data analysis is essential to address the project's liste
 Business Questions to Answer
 
 Generic Questions
+
 How many distinct cities are present in the dataset?
 
 In which city is each branch situated?
 
+
 Product Analysis
+
 How many distinct product lines are there in the dataset?
 
 What is the most common payment method?
@@ -116,7 +124,9 @@ What is the most common product line by gender?
 
 What is the average rating of each product line?
 
+
 Sales Analysis
+
 Number of sales made in each time of the day per weekday
 
 Identify the customer type that generates the highest revenue.
@@ -125,7 +135,9 @@ Which city has the largest tax percent/ VAT (Value Added Tax)?
 
 Which customer type pays the most VAT?
 
+
 Customer Analysis
+
 How many unique customer types does the data have?
 
 How many unique payment methods does the data have?
