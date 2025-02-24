@@ -1,71 +1,72 @@
 # Walmart-Sales-Data-Analysis--SQL-Project
 
-About
+# About
 
 We are analysing Walmart's sales data to identify high-performing branches and products, analyze the sales patterns of various products, and understand customer behavior. The primary objective is to enhance and optimize sales strategies. The dataset utilized in this project is sourced from the Kaggle Walmart Sales Forecasting Competition.
 
-Purposes of the Project
+# Purposes of the Project
 
 The main goal of this project is to gain understanding from Walmart's sales data, exploring the various factors that influence sales across different branches.
 
-About Data
+# About Data
 
 This project's data was obtained from the Kaggle Walmart Sales Forecasting Competition and it encompasses sales transactions from three Walmart branches situated in Mandalay, Yangon, and Naypyitaw, respectively. The data contains 17 columns and 1000 rows:
 
-Column	Description	Data Type
+# Column	Description	(Data Types)
 
-invoice_id	            Invoice of the sales made	VARCHAR(30)
+invoice_id	      :-     Invoice of the sales made	VARCHAR(30)
 
-branch	                Branch at which sales were made	VARCHAR(5)
+branch	       :-        Branch at which sales were made	VARCHAR(5)
 
-city	                The location of the branch	VARCHAR(30)
+city	         :-      The location of the branch	VARCHAR(30)
 
-customer_type          	The type of the customer	VARCHAR(30)
+customer_type      :-    	The type of the customer	VARCHAR(30)
 
-gender	              Gender of the customer making purchase	VARCHAR(10)
+gender	      :-        Gender of the customer making purchase	VARCHAR(10)
 
-product_line	       Product line of the product sold	VARCHAR(100)
+product_line	   :-    Product line of the product sold	VARCHAR(100)
 
-unit_price	          The price of each product	DECIMAL(10, 2)
+unit_price	     :-     The price of each product	DECIMAL(10, 2)
 
-quantity	           The amount of the product sold	INT
+quantity	      :-     The amount of the product sold	INT
 
-VAT	                 The amount of tax on the purchase	FLOAT(6, 4)
+VAT	          :-       The amount of tax on the purchase	FLOAT(6, 4)
 
-total	           The total cost of the purchase	DECIMAL(12, 4)
+total	       :-    The total cost of the purchase	DECIMAL(12, 4)
 
-date	          The date on which the purchase was made	DATETIME
+date	      :-    The date on which the purchase was made	DATETIME
 
-time	             The time at which the purchase was made	TIME
+time	      :-       The time at which the purchase was made	TIME
 
-payment	          The total amount paid	DECIMAL(10, 2)
+payment	    :-      The total amount paid	DECIMAL(10, 2)
 
-cogs	            Cost Of Goods sold	DECIMAL(10, 2)
+cogs	       :-     Cost Of Goods sold	DECIMAL(10, 2)
 
-gross_margin_pct	    Gross margin percentage	FLOAT(11, 9)
+gross_margin_pct	   :- Gross margin percentage	FLOAT(11, 9)
 
-gross_income	          Gross Income	DECIMAL(12, 4)
+gross_income	    :-      Gross Income	DECIMAL(12, 4)
 
-rating	            Rating	FLOAT(2, 1)
+rating	      :-      Rating	FLOAT(2, 1)
 
-Analysis List:
+# Analysis List:
 
-Product Analysis
+# Product Analysis:-
 
 Perform an analysis on the data to gain insights into different product lines, determine the top-performing product lines, and identify areas for improvement in other product lines.
 
 
-Sales Analysis
+# Sales Analysis:-
 
 The objective of this analysis is to address the inquiry regarding the sales trends of the product. The outcomes of this analysis can assist in evaluating the efficiency of each applied sales strategy in the business and determining necessary modifications to increase sales.
 
 
-Customer Analysis
+# Customer Analysis:-
 
 This analysis is focused on identifying various customer segments, understanding purchasing trends, and evaluating the profitability associated with each of these customer segments.
 
-Approach Used
-1. Data Wrangling
+# Approach Used:-
+
+# 1. Data Wrangling
 
 During this initial phase, the data is examined to detect any NULL or missing values, and strategies for data replacement are implemented to address and substitute these values effectively.
 
@@ -74,7 +75,7 @@ Create a table and insert the data.
 
 Select columns with null values in them. Null values are not present in our database because, in creating the tables, NOT NULL was specified for each field, effectively filtering out any null values.
 
-2. Feature Engineering
+# 2. Feature Engineering
 
 This will help use generate some new columns from existing ones.
 
@@ -85,20 +86,20 @@ Add a new column named day_name that contains the extracted days of the week on 
 
 Add a new column named month_name that contains the extracted months of the year on which the given transaction took place (Jan, Feb, Mar). Help determine which month of the year has the most sales and profit.
 
-3. Exploratory Data Analysis (EDA)
+# 3. Exploratory Data Analysis (EDA)
 
 Conducting exploratory data analysis is essential to address the project's listed questions and objectives.
 
 Business Questions to Answer
 
-Generic Questions
+# Generic Questions
 
 How many distinct cities are present in the dataset?
 
 In which city is each branch situated?
 
 
-Product Analysis
+# Product Analysis
 
 How many distinct product lines are there in the dataset?
 
@@ -125,7 +126,7 @@ What is the most common product line by gender?
 What is the average rating of each product line?
 
 
-Sales Analysis
+# Sales Analysis
 
 Number of sales made in each time of the day per weekday
 
@@ -136,7 +137,7 @@ Which city has the largest tax percent/ VAT (Value Added Tax)?
 Which customer type pays the most VAT?
 
 
-Customer Analysis
+# Customer Analysis
 
 How many unique customer types does the data have?
 
