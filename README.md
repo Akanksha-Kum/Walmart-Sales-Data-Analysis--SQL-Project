@@ -1,9 +1,11 @@
 # Walmart-Sales-Data-Analysis--SQL-Project
 
 About
+
 We are analysing Walmart's sales data to identify high-performing branches and products, analyze the sales patterns of various products, and understand customer behavior. The primary objective is to enhance and optimize sales strategies. The dataset utilized in this project is sourced from the Kaggle Walmart Sales Forecasting Competition.
 
 Purposes of the Project
+
 The main goal of this project is to gain understanding from Walmart's sales data, exploring the various factors that influence sales across different branches.
 
 About Data
@@ -84,7 +86,9 @@ Which customer type pays the most VAT?
 
 Customer Analysis
 How many unique customer types does the data have?
+
 How many unique payment methods does the data have?
+
 Which is the most common customer type?
 Which customer type buys the most?
 What is the gender of most of the customers?
